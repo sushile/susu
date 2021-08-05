@@ -1,0 +1,242 @@
+//  latest
+.latest{
+    justify-content: space-between;
+ 
+    .container{
+        .title{
+            display: flex;
+            justify-content:space-between;
+            padding-top: 10px;
+            height: 114px;
+            .left{
+                .big{
+                    height: 50px;
+                    p{
+                    display: flex;
+                    font-weight: bolder;
+                    font-size: 25px;
+                        span{
+                            color: #888888;
+                            height: 50px;
+                        }
+                    }
+                }
+                .small{
+                    display: flex;
+                    
+                    .box1{
+                        font-weight: bold ;
+                        height: 50px;
+                        text-align: center;
+                        margin: 5px auto;
+                        
+                        span{
+                            line-height: 30px;
+                            font-size: 26px;
+
+                        }
+                    }
+                    .box2{
+                        height: 30px;
+                        span{
+                            line-height: 10px;
+                            font-size: 14px;
+                            color: #888888;
+                        }
+                    }
+                }
+            }
+            .right{
+                .box3{
+                    margin-right: 20px;
+                    width: 20px;
+                    margin-top: 5em;
+                    span{
+                        color: #888888;
+                    }
+                }
+            }
+        } 
+        .content{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            .box1{
+                overflow: hidden;
+                // border: 1px solid red;
+                width: 30%;
+                .info{
+                    background-color: #f8f8f8;
+                    padding: 10px;
+                    .big{
+                        font-size: 18px;
+                        color: #333333;
+                        // margin: 20px;
+                    }
+                    .small{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 5px;
+                        .left{
+                            display: flex;
+                            color: #aaaaaa;
+                            align-items: center;
+                            justify-content: center;
+                            padding-left: 5px;
+                        }
+                        .right{
+                            display: flex;
+                            color: #ffffff;
+                            width: 100px;
+                            height: 30px;
+                            border-radius: 5px;
+                            background-color: #ffb900;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1000px) {
+        &{
+            .left_1{
+               display: none;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        &{
+            .right_1{
+                display: none;
+            }
+            .container{
+                .content{
+                    flex-wrap: wrap;
+                    .box1{
+                        width: 100%;
+                        display: flex;
+                        margin-top: 15px;
+                        .photo{
+                            width: 45%;
+                        }
+                        .info{
+                            .small{
+                                .right{
+
+                                }
+                            }
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:600px) {
+        &{
+            .container{
+                .content{
+                    flex-wrap: wrap;
+                    .box1{
+                        .info{
+                            .small{
+                                .right{
+                                    width: 80px;
+                                    height: 20px;                  
+                                }
+                            }
+                        }                   
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 分页
+.paging{
+    width: 20%;
+    margin: 0 auto;
+    .pagination{
+        &>li{
+            a{
+                border-radius: 20px 20px 20px 20px;
+                margin-left:5px ;
+                &:hover{
+                    background-color: #ffb900;
+                    color: pink;
+                    
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1500px){
+        &{
+            width: 30%;
+        }
+    }
+    @media screen and (max-width:1200px){
+        &{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width:890px){
+        &{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:630px){
+        &{
+            width: 70%;
+        }
+    }
+    @media screen and (max-width:414px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .big{
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                        .small{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .box1{
+                                width: 100%;
+                                height: 0%;
+                                text-align: left;
+                                margin: 0 auto;
+                                span{
+                                    font-size: 20px;
+                                   
+                                }
+                        
+                            }
+                            .box2{
+                                width:100%;
+                                font-size: 1px;
+                            }
+                        }
+                    }
+                    
+
+                } 
+                .content{
+                    .box1{
+                        flex-wrap: wrap;
+                        .photo{
+                            width: 100%;
+                        }
+                        .info{
+                            width:100%;
+                        }
+                    }
+                }
+            }       
+        }
+    }
+}

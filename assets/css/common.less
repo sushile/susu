@@ -1,0 +1,280 @@
+.container{
+    width: 75%;
+}
+
+/* 头部 */
+// .navbar{
+//     .container{
+//         display: flex;
+//         .navbar-header{
+//             width: 20%;
+
+//         }
+//     }
+// }
+
+
+
+
+.header{
+    .left_1{
+        position: relative;
+        position: fixed;
+        z-index: 100;
+        top: 345px;
+        left: 0px;
+        width: 9em;
+        height: 19em;
+        border: 2px solid #ededed;
+        border-radius: 5px ;
+        background-color: #ffffff;
+        .outside{
+            position: absolute;
+            top: 34px;
+            right: -34px;
+        }
+        .one{
+            border-bottom: 1px solid #888888;
+            text-align: center;
+            padding: 5px 5px;
+        }
+        .two{
+            border-bottom: 1px solid #888888;
+            padding: 5px 5px;
+            .two_1{display: flex;}
+            .two_2{display: flex;}
+            .two_3{display: flex;}
+        }
+        .three{
+            border-bottom: 1px solid #888888;
+            text-align: center;
+        }
+        .four{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .right_1{
+        position:fixed;
+        top:345px;
+        right:0px;
+        z-index: 100;
+        width:9em;
+        height: 19em;
+        border: 2px solid #ededed;
+        border-radius: 5px ;
+        background-color: #ffffff;
+        .outside{
+            position: absolute;
+            top: 34px;
+            left: -38px;
+        }
+        .one{
+            border-bottom: 1px solid #888888;
+            text-align: center;
+        }
+        .two{
+            border-bottom: 1px solid #888888;
+            padding: 5px 5px;
+            .two_1{display: flex;}
+            .two_2{display: flex;}
+            .two_3{display: flex;}
+        }
+        .three{
+            border-bottom: 1px solid #888888;
+            text-align: center;
+        }
+        .four{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    // background-color:#111111;
+    background-color:#fff;
+    padding:1em 0em;
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100000;
+    transition:all linear .4s;
+
+    .navbar{
+        background-color:transparent;
+        border:0px;
+        border-radius: 0px;
+        margin: 0;
+        .navbar-header{
+            .logo{
+                width: 30%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .navbar-brand{
+            color:#fff;
+            text-transform: uppercase;
+            font-family: OSBold;
+            width: 50%;
+        }
+
+        .nav{
+            a{
+                color:black;
+                text-transform: uppercase;
+                border-bottom:3px solid transparent;
+                transition:all linear .3s;
+
+                &:hover{
+                    border-bottom:3px solid #fcac45;
+                    color:pink;
+                }
+            }
+        }
+    }
+ 
+
+    @media screen and (max-width:768px){
+        &{
+            background-color:#111111;
+            .navbar{
+                display: flex;
+                .nav{
+                    a{  
+                        color: aqua;
+                        text-align: center;
+                    }
+                }
+            }
+            .left_1,.right_1{
+                display: none;
+            }
+        }
+        
+    }
+    @media screen and (max-width:1000px){
+        &{
+            background-color:#111111;
+            .navbar{
+                .nav{
+                    a{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }  
+} 
+
+
+// 脚部
+.footer{ 
+    margin-top: 4em;
+    .footer_big{
+        background-color:#333;
+        .row{
+            .footer-item{
+                margin:10px 0px ;
+                .footer-list{
+                    color: #ffffff;
+                    height: 170px;
+                    border-right: 2px solid #666666;
+                    ul{
+                        li{
+                            a{
+                                color: #7e7e7e;
+                            }
+                        }
+                    }
+                                
+                }
+                .footer-last{
+                    
+                    display: inline-block;
+                    color: #ffffff;
+                    width: 55%;
+                    ul{
+                        li{
+                            .item{
+                                margin-top: 2px;
+                                span{
+                                    color: #7e7e7e;
+                                    font-size:3px ;    
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .footer-wechat{
+                    
+                    display: inline-block;
+                    width: 35%;
+        
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        color: #999999;
+                    }                   
+                }
+            }                                                                       
+        }
+    } 
+    .second{
+        height: 25px;
+        background-color: #282828;
+        text-align: center;
+        
+        .container{
+            p{
+                color: #8d8d8d;
+                padding: 2px auto;
+            }
+        }
+    }    
+    @media screen and (max-width:768px){
+        &{ 
+            .footer_big{
+                .row{
+                    .footer-list{
+                        text-align: center;
+                        ul{
+                            li{
+                                a{
+                                    &:hover{
+                                        color: violet;
+                                    }
+                                }
+                            }
+                        }                       
+                    }
+                    .footer-last{
+                        .item{
+                            span{
+                                &:hover{
+                                    color: palevioletred;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .second{
+                height: 60px;
+            }
+        }
+        
+    }                
+}
+    
+
+
+
+
+

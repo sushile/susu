@@ -1,0 +1,90 @@
+.about{
+    justify-content: space-between;
+ 
+    .container{
+        .title{
+            display: flex;
+            justify-content:space-between;
+            padding-top: 10px;
+            height: 114px;
+            .left{
+                .big{
+                    height: 50px;
+                    p{
+                    display: flex;
+                    font-weight: bolder;
+                    font-size: 25px;
+                        span{
+                            color: #888888;
+                            height: 50px;
+                        }
+                    }
+                }
+                .small{
+                    display: flex;
+                    
+                    .box1{
+                        font-weight: bold ;
+                        height: 50px;
+                        text-align: center;
+                        margin: 5px auto;
+                        
+                        span{
+                            line-height: 30px;
+                            font-size: 26px;
+
+                        }
+                    }
+                    .box2{
+                        height: 30px;
+                        span{
+                            line-height: 10px;
+                            font-size: 14px;
+                            color: #888888;
+                        }
+                    }
+                }
+            }
+            .right{
+                .box3{
+                    margin-right: 20px;
+                    width: 20px;
+                    margin-top: 5em;
+                    span{
+                        color: #888888;
+                    }
+                }
+            }
+        } 
+        .title2{
+            font-size: 25px;
+            display: flex;
+            .left_2{
+                font-weight: bold;
+                width: 30%;
+                
+            }
+            .right_2{
+                margin-left: 2em;
+                width: 50%;
+            }
+        }
+        .one{
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width:500px){
+        &{
+            .title2{
+                font-size: 15px;
+                flex-wrap: wrap;
+                .left_2{
+                    width: 100%;
+                }
+                .right_2{
+                    width: 100%;
+                }
+            }
+        }       
+    }
+}
